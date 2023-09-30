@@ -11,7 +11,6 @@ const Usuarios = () => {
       const data = await fetch('https://jsonplaceholder.typicode.com/users')
       const datos = await data.json()
       setUsers(datos)
-      console.log(datos)
     } catch (error) {
       console.log(error)
     }
